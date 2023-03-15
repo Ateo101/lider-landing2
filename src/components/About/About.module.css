@@ -1,0 +1,57 @@
+
+.about {
+    max-width: calc(80%);
+    padding: 150px calc(10%);
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 100px;
+}
+
+.aboutLeft {
+    width: 50%;
+}
+
+.aboutPhoto {
+    position: relative;
+    height: 40vh;
+    width: calc(100%);
+    background: url('../moon2.png') no-repeat 47%;
+    background-size: cover;
+}
+.aboutPhotoBorder {
+    position: absolute;
+    top: 11px;
+    bottom: -25px;
+    left: 11px;
+    right: -25px;
+    border: 10px solid #000;
+    z-index: -1;
+}
+
+.aboutRight {
+    width: fit-content;
+    word-break: break-word;
+    padding-left: 50px;
+}
+
+@media (max-width: 600px) {
+    .aboutContent { flex-wrap: wrap }
+    .aboutRight { margin-top: 20px; padding-left: 0 }
+    .aboutLeft { width: 90% }
+}
+
+.aboutRight ul{
+    padding-left: 5px;
+}
+
+.aboutRight ul li {
+    padding-left: 5px;
+}
+
+.aboutRight ul li::marker {
+    content: attr(data-emoji);
+}

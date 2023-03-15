@@ -1,0 +1,123 @@
+.top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+    z-index: 100;
+    max-width: 90%;
+    padding: 18px 0;
+    margin: 0 auto;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    word-break: break-word;
+
+    width: 25%;
+}
+
+.logoText {
+    font-size: 16px;
+    line-height: 15px;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.btnContainer {
+    width: 29%;
+}
+
+.topBtn {
+    font-size: medium;
+    padding: 17px;
+    line-height: 16.71px;
+    border-radius: 8px;
+}
+
+.topPros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+.topGuaranty {
+    font-size: 16px;
+}
+
+.topPhone a{
+    font-size: 16px;
+    text-decoration: underline;
+    color: #191919;
+}
+
+.topNavigation {
+    padding: 20px 0;
+
+    background-color: #F7F9F4;
+}
+
+.scrollNavigation {
+    position: fixed;
+    height: fit-content;
+
+    padding: 20px 0;
+
+    opacity: 0;
+    inset: 0;
+    z-index: 99;
+
+    background-color: #F7F9F4;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    transition: all .5s ease;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.menu li {
+    padding: 0 calc(3%);
+    border-right: 1px solid #191919;
+}
+.menu li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #191919;
+}
+
+.menu li a:hover {
+    color: rgba(109, 151, 48, 1);
+    transition: all .3s ease;
+}
+
+.scroll{
+    /*background-color: rgb(230 95 120);*/
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .topNavigation, .top { display: none }
+    .scrollNavigation { opacity: 1 }
+    /*.aboutRight { margin-top: 20px; padding-left: 0 }
+    .aboutLeft { width: 90% }*/
+}
