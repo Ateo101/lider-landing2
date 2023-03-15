@@ -39,7 +39,7 @@ button:hover {
     width: 34%;
     font-size: 16px;
     padding: 20px calc(5%);
-    border-radius: 5px;
+    border-radius: 8px;
     border: 2px solid #4A6C1E;
     outline: none;
 

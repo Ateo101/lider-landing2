@@ -1,0 +1,79 @@
+
+.scheme {
+    padding: 70px calc(10%);
+}
+
+.schemeContent {
+
+}
+
+.schemeLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.schemeRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.middle {
+    height: 40vh;
+    position: relative;
+}
+.middle::before {
+    content: ' ';
+    position: absolute;
+    inset: 0;
+    animation: levitation 2s infinite ease alternate;
+    background: url('../new3.jpg') no-repeat 50%;
+    background-size: contain;
+}
+
+.secondTitle span{
+    color: #4B6D1F;
+}
+.secondTitle h2{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+}
+
+.secondTitle h2::before {
+    content: '';
+    background: url('../h2marker.svg') no-repeat left;
+    width: 11px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+    /*filter: drop-shadow(-3px 4px 0px gray);*/
+}
+
+.schemeLeft > * > ul, .schemeRight > * > ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.schemeLeft > * > ul li, .schemeRight > * > ul li {
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.schemeLeft > * > ul li::marker, .schemeRight > * > ul li::marker {
+    color: #608a24;
+    content: attr(data-emoji);
+    font-size: 25px;
+}
+
+.schemeRight > * > p, .schemeLeft > * > p {
+    margin-bottom: 0;
+    border-bottom: 1px solid;
+}
+
+@media (max-width: 600px) {
+    .schemeRight, .schemeLeft {
+        flex-wrap: wrap;
+    }
+}

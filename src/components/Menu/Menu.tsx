@@ -40,20 +40,20 @@ const Menu = () => {
                 <nav className={s.menu}>
                     <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
                     <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
-                    <li><Scrollchor to="skills" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
-                    <li><Scrollchor to="portfolio" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
-                    <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
-                    <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Гарантия</Scrollchor></li>
+                    <li><Scrollchor to="scheme" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
+                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
+                    <li><Scrollchor to="supplies" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
+                    <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Контакты</Scrollchor></li>
                 </nav>
             </header>
             <header className={scroll ? s.scrollNavigation + ' ' + s.scroll : s.scrollNavigation}>
                 <nav className={s.menu}>
                     <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
                     <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
-                    <li><Scrollchor to="skills" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
-                    <li><Scrollchor to="portfolio" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
-                    <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
-                    <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Гарантия</Scrollchor></li>
+                    <li><Scrollchor to="scheme" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
+                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
+                    <li><Scrollchor to="supplies" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
+                    <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Контакты</Scrollchor></li>
                 </nav>
             </header>
         </>

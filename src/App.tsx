@@ -4,6 +4,10 @@ import Menu from "./components/Menu/Menu";
 import Home2 from "./components/Home/Home2";
 import {Payback} from "./components/Payback/Payback";
 import {Selection} from "./components/Selection/Selection";
+import {Scheme} from "./components/Scheme/Scheme";
+import {About} from "./components/About/About";
+import {Supplies} from "./components/Supplies/Supplies";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -14,9 +18,12 @@ function App() {
                 <Home2/>
                 <Payback/>
                 <Selection/>
-                <div style={{height: '100vh', background: 'whitesmoke'}}/>
+                <Scheme/>
+                <About/>
+                <Supplies/>
+                <Selection/>
             </main>
-            {/*<Footer/>*/}
+            <Footer/>
         </>
     );
 }

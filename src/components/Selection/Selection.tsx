@@ -5,10 +5,10 @@ import {FormCalc} from "../FormCalc/FormCalc";
 export const Selection = () => {
 
     return (
-        <div className={s.about} id="selection">
-            <div className={s.aboutContent}>
+        <div className={s.selection} id="selection">
+            <div className={s.selectionContent}>
 
-                <div className={s.aboutLeft}>
+                <div className={s.selectionLeft}>
 
                     <div className={s.container}>
                         <div className={s.secondTitle}>
@@ -24,7 +24,7 @@ export const Selection = () => {
 
                 </div>
 
-                <div className={s.aboutRight}>
+                <div className={s.selectionRight}>
                     <FormCalc/>
                 </div>
 

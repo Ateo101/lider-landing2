@@ -39,7 +39,7 @@
     color: white;
     text-shadow: -2px 2px 1px #0000009c;
     backdrop-filter: blur(2px);
-    background: linear-gradient(to right, rgb(74 108 30) 0%, rgba(74, 108, 30, 0.7) 50%, rgb(255 255 255 / 0%) 100%);
+    background: linear-gradient(to right, rgb(74 108 30) 0%, rgba(74, 108, 30, 0.6) 50%, rgb(255 255 255 / 0%) 100%);
     border-left: 5px solid #ffffff;
     padding: 20px 25px;
 
@@ -86,8 +86,8 @@
     inset: 0;
 
     animation: levitation 2s infinite ease alternate;
-    background: url('./new2.png') no-repeat 100%;
-    background-size: contain;
+    background: url('../new2.png') no-repeat 100%;
+    background-size: 100%;
 }
 
 @media (max-width: 1200px) {

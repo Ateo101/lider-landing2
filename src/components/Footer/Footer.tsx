@@ -2,15 +2,15 @@ import s from "./Footer.module.css"
 
 const Footer = () => {
     return (
-        <div className={s.footer} id="footer">
+        <div className={s.footer} id="contacts">
             <div className={s.footerItem}>
-                Nikita Mikhailov
+                Footer
             </div>
             <div className={s.footerItem}>
-                nikmail242@gmail.com
+                Footer
             </div>
             <div className={s.footerItem}>
-                <button>Download CV</button>
+                <button>Footer</button>
             </div>
         </div>
     )
