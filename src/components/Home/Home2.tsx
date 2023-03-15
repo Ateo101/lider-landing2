@@ -3,12 +3,13 @@ import {Canvas} from "@react-three/fiber";
 import {Sphere, MeshDistortMaterial} from "@react-three/drei";
 import s from "./Home2.module.css"
 import logo from "./home-logo.png";
+import {FormCalc} from "../FormCalc/FormCalc";
 
 const Hero = () => {
 
     return (
-        <div className={s.home} id="home">
-            <div className={s.overlay}/>
+        <div className={s.home}>
+            {/*<div className={s.overlay}/>*/}
 
             <div className={s.homeContent}>
 
@@ -28,13 +29,14 @@ const Hero = () => {
                         <li data-emoji="🔰">сроки поставки</li>
                         <li data-emoji="🔰">просчет лизинга в 12 компаниях</li>
                     </ul>
+                    <FormCalc/>
                 </div>
 
                 <div className={s.homeRight}>
                     <Canvas className={s.canvas}>
                         <Suspense fallback={null}>
 
-                            <ambientLight intensity={1}/>
+                            <ambientLight intensity={1.3}/>
                             <directionalLight position={[3, 2, 1]}/>
                             {
                                 // @ts-ignore

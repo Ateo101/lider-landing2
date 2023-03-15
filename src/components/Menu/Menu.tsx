@@ -9,7 +9,7 @@ const Menu = () => {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY > 150);
+            setScroll(window.scrollY > 200);
         });
     }, []);
 
@@ -38,8 +38,8 @@ const Menu = () => {
 
             <header className={s.topNavigation}>
                 <nav className={s.menu}>
-                    <li><Scrollchor to="home" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
-                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>Наличие</Scrollchor></li>
+                    <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
+                    <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
                     <li><Scrollchor to="skills" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
                     <li><Scrollchor to="portfolio" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
@@ -48,8 +48,8 @@ const Menu = () => {
             </header>
             <header className={scroll ? s.scrollNavigation + ' ' + s.scroll : s.scrollNavigation}>
                 <nav className={s.menu}>
-                    <li><Scrollchor to="home" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
-                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>Наличие</Scrollchor></li>
+                    <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
+                    <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
                     <li><Scrollchor to="skills" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
                     <li><Scrollchor to="portfolio" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
