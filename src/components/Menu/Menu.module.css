@@ -117,7 +117,7 @@
 
 @media (max-width: 1200px) {
     .topNavigation, .top { display: none }
-    .scrollNavigation { opacity: 1 }
+    /*.scrollNavigation { opacity: 1 }*/
     /*.aboutRight { margin-top: 20px; padding-left: 0 }
     .aboutLeft { width: 90% }*/
 }

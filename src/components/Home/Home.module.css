@@ -10,6 +10,7 @@
     background-position-x: 50%;
     background-position-y: 20%;
     background-size: cover;
+    filter: brightness(1.05) contrast(105%);
 }
 
 .overlay {
@@ -93,7 +94,13 @@
 @media (max-width: 1200px) {
     .homeContent { flex-wrap: wrap; min-height: 120vh; }
     .homeRight { display: none }
-    .homeLogo { display: block; padding-top: 15px }
+    .homeLogo {
+        display: block;
+        padding-top: 15px;
+        margin-bottom: -5px;
+        width: 150px;
+        height: fit-content;
+    }
     /*.aboutRight { margin-top: 20px; padding-left: 0 }
     .aboutLeft { width: 90% }*/
 }

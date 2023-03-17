@@ -2,8 +2,8 @@ import React, {Suspense} from "react";
 import {Canvas} from "@react-three/fiber";
 import {Sphere, MeshDistortMaterial} from "@react-three/drei";
 import s from "./Home.module.css"
-import logo from "./home-logo.png";
 import {FormCalc} from "../FormCalc/FormCalc";
+import SvgComponent from "./SvgLogo";
 
 export const Home = () => {
 
@@ -14,7 +14,7 @@ export const Home = () => {
             <div className={s.homeContent}>
 
                 <div className={s.homeLeft}>
-                    <img src={logo} className={s.homeLogo} alt=""/>
+                    <SvgComponent className={s.homeLogo}/>
                     <h1>
                         Оборудование для резиновой крошки
                     </h1>
