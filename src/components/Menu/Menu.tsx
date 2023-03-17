@@ -21,7 +21,9 @@ const Menu = () => {
                     <p className={s.logoText}>Оборудование для укладки резинового покрытия</p>
                 </div>
                 <div className={s.btnContainer}>
-                    <button className={s.topBtn}>Получить коммерческое предложение</button>
+                    <Scrollchor to="selection" animate={{duration: 500, easing: linear}}>
+                        <button className={s.topBtn}>Получить коммерческое предложение</button>
+                    </Scrollchor>
                 </div>
                 <div className={s.topPros}>
                     <div className={s.topGuaranty}><img src={guarantee}/>Мощные БРУ в наличии</div>
@@ -39,9 +41,9 @@ const Menu = () => {
             <header className={s.topNavigation}>
                 <nav className={s.menu}>
                     <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
+                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
                     <li><Scrollchor to="scheme" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
-                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="supplies" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
                     <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Контакты</Scrollchor></li>
                 </nav>
@@ -49,9 +51,9 @@ const Menu = () => {
             <header className={scroll ? s.scrollNavigation + ' ' + s.scroll : s.scrollNavigation}>
                 <nav className={s.menu}>
                     <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
+                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
                     <li><Scrollchor to="scheme" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
-                    <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="supplies" animate={{duration: 500, easing: linear}}>Поставки</Scrollchor></li>
                     <li><Scrollchor to="contacts" animate={{duration: 500, easing: linear}}>Контакты</Scrollchor></li>
                 </nav>

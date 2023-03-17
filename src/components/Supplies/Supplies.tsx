@@ -50,23 +50,19 @@ export const Supplies = () => {
     ]
 
     return (
-        <div className={s.payback} id="supplies">
+        <div className={s.supplies} id="supplies">
 
             <div className={s.secondTitle}>
                 <h2>Примеры поставок оборудования</h2>
             </div>
 
-            <div className={s.paybackContent}>
-
-                <div className={s.paybackRight}>
+            <div className={s.suppliesContent}>
                         {suppliesData.map((s, i) => <Item key={i}
                                                                        city={s.city}
                                                                        description={s.description}
                                                                        img={s.img}
                                                                        features={s.features}/>
                         )}
-                </div>
-
             </div>
 
         </div>

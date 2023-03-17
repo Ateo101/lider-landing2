@@ -1,10 +1,10 @@
 
-.payback {
+.about {
     padding: 70px calc(10%);
     background-color: #F7F9F4;;
 }
 
-.paybackContent {
+.aboutContent {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -14,11 +14,11 @@
 .container {
 }
 
-.paybackLeft {
+.aboutLeft {
     width: 50%;
 }
 
-.paybackRight {
+.aboutRight {
     padding-left: 50px;
     width: 50%;
 }
@@ -60,16 +60,16 @@
 }
 
 @media (max-width: 600px) {
-    .paybackContent {
+    .aboutContent {
         flex-wrap: wrap
     }
 
-    .paybackRight {
+    .aboutRight {
         margin-top: 20px;
         padding-left: 0
     }
 
-    .paybackLeft, .paybackRight {
+    .aboutLeft, .aboutRight {
         width: 90%
     }
 }

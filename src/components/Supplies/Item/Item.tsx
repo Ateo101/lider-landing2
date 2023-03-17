@@ -1,4 +1,4 @@
-import s from "../../Section.module.css"
+import s from "../Supplies.module.css"
 
 export type ItemPropsType = {
     city: string,
@@ -9,13 +9,17 @@ export type ItemPropsType = {
 
 const Item = (props: ItemPropsType) => {
     return (
-        <div className={s.sectionItem}>
-            <div><img src={props.img} className={s.sectionImg}/></div>
-            <div>{props.city}</div>
+        <div className={s.suppliesItem}>
+            <img src={props.img} className={s.suppliesImg}/>
+            <h3>Спецификация</h3>
             <ul>
-                {props.description.map(d => <li>{d}</li>)}
+                <span>{props.city}</span>
+                {props.description.map((d, i) => <li key={i} data-emoji="•">{d}</li>)}
             </ul>
-            <div>{props.features}</div>
+            <div className={s.features}>
+                <h3>Особенности</h3>
+                {props.features}
+            </div>
         </div>
     )
 }

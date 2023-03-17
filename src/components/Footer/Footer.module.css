@@ -12,3 +12,7 @@
 .footerItem {
     padding: 20px calc(3%);
 }
+
+.footerItem p {
+    font-size: 12px;
+}
