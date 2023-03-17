@@ -18,14 +18,28 @@ export const FormCalc = () => {
         },
         validationSchema: Yup.object<FormikErrorsType>().shape({
             contactName: Yup.string().trim().required('Пожалуйста, укажите имя').min(3, 'Слишком мало символов').max(40, 'Слишком много символов'),
-            phone: Yup.string().trim().required('Пожалуйста, укажите номер').matches(phoneRegExp, 'Номер некорректный').min(10, 'Слишком мало символов').max(18, 'Слишком много символов'),
+            phone: Yup.string().trim().required('Пожалуйста, укажите номер').matches(phoneRegExp, 'Номер некорректный'),
         }),
         onSubmit: (values, {resetForm}) => {
             const {contactName, phone} = values
-            alert(`${contactName.trim()}, ${phone.trim()}`)
+            {
+                // @ts-ignore
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "sales@lider-stk.com",
+                    Password: "EDB5A24ED6F812D1FB9B8FAF76E68BA37B14",
+                    To: 'sales@lider-stk.com',
+                    From: "sales@lider-stk.com",
+                    Subject: "Новая заявка | Оборудование для резиновой крошки",
+                    Body: `Имя: ${contactName}<br/>Телефон: ${phone}`
+                });
+            }
+
             resetForm({values: {contactName: '', phone: ''}})
         },
     })
+
+
 
     return (
         <form className='form' onSubmit={formik.handleSubmit}>
