@@ -8,7 +8,7 @@ export type FormikErrorsType = {
     hone: string
 }
 
-export const FormCalc = () => {
+export const Form = () => {
     const phoneRegExp = /^[0-9]{1}\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}-[0-9]{2}$/
     const [sent, setSent] = useState(false)
 
@@ -79,7 +79,7 @@ export const FormCalc = () => {
                     <input type={'checkbox'} defaultChecked={true}/>
                     <p>Согласие на обработку персональных данных</p>
                 </div>
-                <p style={{fontSize: '16px'}}>В течение 15 минут с вами свяжется инженер для уточнения данных</p>
+                <p style={{fontSize: '16px'}}>В течение 15 минут с вами свяжется менеджер для уточнения данных</p>
             </div>
 
         </form>

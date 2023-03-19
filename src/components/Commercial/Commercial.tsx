@@ -1,6 +1,6 @@
 import s from "./Commercial.module.css"
 import React from "react";
-import {FormCalc} from "../FormCalc/FormCalc";
+import {Form} from "../../common/Form/Form";
 
 export const Commercial = () => {
 
@@ -16,18 +16,17 @@ export const Commercial = () => {
                             <p>И получите скидку при подписании договора в течение<br/>2 недель до 200 000 руб, а также:</p>
                         </div>
                         <ul>
-                            <li data-emoji="•">2-3 варианта бетонных заводов с ценами</li>
+                            <li data-emoji="•">2-3 варианта оборудования для резиновой крошки</li>
                             <li data-emoji="•">сроки поставки</li>
-                            <li data-emoji="•">дополнительный опции</li>
-                            <li data-emoji="•">просчет лизинга в 12 компаниях</li>
-                            <li data-emoji="•">комплектацию бетонных заводов</li>
+                            <li data-emoji="•">запрос лизинга в 12 компаниях</li>
+                            <li data-emoji="•">5 площадок для поиска выгодных тендеров</li>
                         </ul>
                     </div>
 
                 </div>
 
                 <div className={s.commercialRight}>
-                    <FormCalc/>
+                    <Form/>
                 </div>
 
             </div>

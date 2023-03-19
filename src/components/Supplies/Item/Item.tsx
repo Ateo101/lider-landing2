@@ -4,18 +4,25 @@ export type ItemPropsType = {
     city: string,
     description: string[],
     img: string,
+    equipment: string,
     features: string,
 }
 
 const Item = (props: ItemPropsType) => {
     return (
         <div className={s.suppliesItem}>
-            <img src={props.img} className={s.suppliesImg}/>
+            <div className={s.imgContainer}>
+                <img src={props.img}/>
+            </div>
             <h3>Спецификация</h3>
-            <ul>
-                <span>{props.city}</span>
-                {props.description.map((d, i) => <li key={i} data-emoji="•">{d}</li>)}
-            </ul>
+            <div className={s.description}>
+                <ul>
+                    <span style={{textAlign: 'center'}}>{props.city}</span>
+                    <h4>{props.equipment}</h4>
+                    {props.description.map((d, i) => <li key={i} data-emoji="•">{d}</li>)}
+                </ul>
+            </div>
+
             <div className={s.features}>
                 <h3>Особенности</h3>
                 {props.features}

@@ -26,8 +26,8 @@ const Menu = () => {
                     </Scrollchor>
                 </div>
                 <div className={s.topPros}>
-                    <div className={s.topGuaranty}><img src={guarantee}/>Мощные БРУ в наличии</div>
-                    <div className={s.topGuaranty}><img src={guarantee}/>Тройная гарантия</div>
+                    <div className={s.topGuaranty}><img src={guarantee}/>Проходит экспертизу</div>
+                    <div className={s.topGuaranty}><img src={guarantee}/>Быстрая окупаемость</div>
                 </div>
                 <div className={s.topPhone}>
                     <a href=''>
@@ -40,7 +40,7 @@ const Menu = () => {
 
             <header className={s.topNavigation}>
                 <nav className={s.menu}>
-                    <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
+                    <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Соответствие</Scrollchor></li>
                     <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
                     <li><Scrollchor to="scheme" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>
@@ -50,7 +50,7 @@ const Menu = () => {
             </header>
             <header className={scroll ? s.scrollNavigation + ' ' + s.scroll : s.scrollNavigation}>
                 <nav className={s.menu}>
-                    <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Окупаемость</Scrollchor></li>
+                    <li><Scrollchor to="payback" animate={{duration: 500, easing: linear}}>Соответствие</Scrollchor></li>
                     <li><Scrollchor to="about" animate={{duration: 500, easing: linear}}>О компании</Scrollchor></li>
                     <li><Scrollchor to="selection" animate={{duration: 500, easing: linear}}>Подбор</Scrollchor></li>
                     <li><Scrollchor to="scheme" animate={{duration: 500, easing: linear}}>Схема</Scrollchor></li>

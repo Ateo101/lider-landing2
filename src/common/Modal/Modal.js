@@ -77,7 +77,7 @@ const Modal = ({clickedImg,setClickedImg,handelRotationRight,handelRotationLeft}
   img.src = clickedImg
   const isImgLandscape = img.width > img.height // определяем, является ли картинка широкой
 
-  const [opacity, setOpacity] = useState(false);
+  // const [opacity, setOpacity] = useState(false);
 
   const handleClick = (e) => {
     if (e.target.classList.contains("dismiss")) {

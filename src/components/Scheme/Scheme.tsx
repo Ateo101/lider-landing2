@@ -1,5 +1,5 @@
 import s from "./Scheme.module.css"
-import payback from '../SectionImage.jpg'
+import payback from '../../assets/commonAssets/sample-image.jpg'
 
 export const Scheme = () => {
 

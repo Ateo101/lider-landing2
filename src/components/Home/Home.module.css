@@ -87,7 +87,7 @@
     inset: 0;
 
     animation: levitation 2s infinite ease alternate;
-    background: url('../new2.png') no-repeat 100%;
+    background: url('../../assets/commonAssets/paver-home.png') no-repeat 100%;
     background-size: 100%;
 }
 

@@ -1,0 +1,32 @@
+.container{
+    height: 250px;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.carousel img{
+    max-height: -webkit-fill-available;
+    max-width: 100%;
+}
+
+.carousel img.landscape{
+    width: 70%;
+}
+
+.arrowsRight, .arrowsLeft {
+    cursor: pointer;
+    z-index: 98;
+}
+
+.arrowsRight svg, .arrowsLeft svg{
+    width: 38px;
+    border-radius: 100%;
+    color: black;
+    padding: 5px;
+}

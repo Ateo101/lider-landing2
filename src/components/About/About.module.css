@@ -34,7 +34,7 @@
 
 .secondTitle h2::before {
     content: '';
-    background: url('../h2marker.svg') no-repeat left;
+    background: url('../../assets/commonAssets/h2marker.svg') no-repeat left;
     width: 11px;
     height: 27px;
     display: inline-block;
