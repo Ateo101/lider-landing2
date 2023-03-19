@@ -15,8 +15,8 @@ export const Form = () => {
         },
         validationSchema: Yup.object().shape({
             username: Yup.string().trim().required('Пожалуйста, укажите имя').min(3, 'Слишком мало символов').max(40, 'Слишком много символов'),
-            phone: Yup.string().trim().required('Пожалуйста, укажите номер').matches(phoneRegExp, 'Некорректный номер'),
-            useremail: Yup.string().trim().required('Пожалуйста, укажите почту').email('Некорректная почта'),
+            phone: Yup.string().trim().required('Укажите номер').matches(phoneRegExp, 'Введите полный номер'),
+            useremail: Yup.string().trim().required('Укажите почту').email('Почта не существует'),
         }),
         onSubmit: (values, {resetForm}) => {
             const {username, phone, useremail} = values
