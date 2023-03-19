@@ -3,28 +3,23 @@ import * as Yup from "yup";
 import {useFormik} from "formik";
 import {PatternFormat} from "react-number-format";
 
-export type FormikErrorsType = {
-    name: string
-    hone: string
-}
-
 export const Form = () => {
     const phoneRegExp = /^[0-9]{1}\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}-[0-9]{2}$/
     const [sent, setSent] = useState(false)
 
     const formik = useFormik({
         initialValues: {
-            contactName: '',
+            username: '',
             phone: '',
-            email: '',
+            useremail: '',
         },
-        validationSchema: Yup.object<FormikErrorsType>().shape({
-            contactName: Yup.string().trim().required('Пожалуйста, укажите имя').min(3, 'Слишком мало символов').max(40, 'Слишком много символов'),
+        validationSchema: Yup.object().shape({
+            username: Yup.string().trim().required('Пожалуйста, укажите имя').min(3, 'Слишком мало символов').max(40, 'Слишком много символов'),
             phone: Yup.string().trim().required('Пожалуйста, укажите номер').matches(phoneRegExp, 'Некорректный номер'),
-            email: Yup.string().trim().required('Пожалуйста, укажите почту').email('Некорректная почта'),
+            useremail: Yup.string().trim().required('Пожалуйста, укажите почту').email('Некорректная почта'),
         }),
         onSubmit: (values, {resetForm}) => {
-            const {contactName, phone, email} = values
+            const {username, phone, useremail} = values
             // @ts-ignore
                 Email.send({
                     Host: "smtp.elasticemail.com",
@@ -33,9 +28,9 @@ export const Form = () => {
                     To: 'sales@lider-stk.com',
                     From: "sales@lider-stk.com",
                     Subject: "Новая заявка | Оборудование для резиновой крошки",
-                    Body: `Имя: ${contactName}<br/>Телефон: ${phone}<br/>Почта: ${email}`
+                    Body: `Имя: ${username}<br/>Телефон: ${phone}<br/>Почта: ${useremail}`
                 });
-            resetForm({values: {contactName: '', phone: '', email: ''}})
+            resetForm({values: {username: '', phone: '', useremail: ''}})
             setSent(true)
         },
     })
@@ -45,9 +40,9 @@ export const Form = () => {
     return (
         <form className='form' onSubmit={formik.handleSubmit}>
 
-            <input className='formInput' placeholder={'Введите имя'}
+            <input className='formInput callbackwidget-name' placeholder={'Введите имя'}
                    type="text"
-                   {...formik.getFieldProps('contactName')}
+                   {...formik.getFieldProps('username')}
             />
             <PatternFormat className='formInput' placeholder={'Введите номер'}
                            format="# (###) ### ##-##"
@@ -55,19 +50,19 @@ export const Form = () => {
                            mask="_"
                            {...formik.getFieldProps('phone')}
             />
-            {formik.errors.contactName && formik.touched.contactName && (
-                <div className='inputError'>{`${formik.errors.contactName}`}</div>
+            {formik.errors.username && formik.touched.username && (
+                <div className='inputError'>{`${formik.errors.username}`}</div>
             )}
             {formik.errors.phone && formik.touched.phone && (
                 <div className='inputError'>{`${formik.errors.phone}`}</div>
             )}
-            <input className='formInput' placeholder={'Введите почту'}
+            <input className='formInput callbackwidget-email' placeholder={'Введите почту'}
                    type="email"
                    style={{width: '100%', marginBottom: 0}}
-                   {...formik.getFieldProps('email')}
+                   {...formik.getFieldProps('useremail')}
             />
-            {formik.errors.email && formik.touched.email && (
-                <div className='inputError'>{`${formik.errors.email}`}</div>
+            {formik.errors.useremail && formik.touched.useremail && (
+                <div className='inputError'>{`${formik.errors.useremail}`}</div>
             )}
 
             <button type={'submit'} >Получить коммерческое предложение</button>

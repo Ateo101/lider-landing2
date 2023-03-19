@@ -30,7 +30,7 @@ const Menu = () => {
                     <div className={s.topGuaranty}><img src={guarantee}/>Быстрая окупаемость</div>
                 </div>
                 <div className={s.topPhone}>
-                    <a href=''>
+                    <a href="#callbackwidget">
                         <p>Закажите звонок</p>
                     </a>
                 </div>

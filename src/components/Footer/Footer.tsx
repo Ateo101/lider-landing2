@@ -19,9 +19,9 @@ const Footer = () => {
                 </p>
             </div>
             <div className={s.footerItem}>
-                <Scrollchor to="selection" animate={{duration: 500, easing: linear}}>
-                    <button style={{marginTop: 0}}>Закажите звонок</button>
-                </Scrollchor>
+                <a href="#callbackwidget">
+                    <button style={{marginTop: 0}}>Получить скидку</button>
+                </a>
             </div>
         </div>
     )

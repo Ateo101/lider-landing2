@@ -20,11 +20,11 @@ export const Payback = () => {
             "link": leftPhoto2,
         },
         {
-            "text": "Description of image",
+            "text": "Rubber paver machine TPJ",
             "link": leftPhoto1,
         },
         {
-            "text": "Description of image",
+            "text": "Rubber mixer",
             "link": leftPhoto3,
         },
         {

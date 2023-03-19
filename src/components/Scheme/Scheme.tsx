@@ -13,7 +13,7 @@ export const Scheme = () => {
 
                 <div className={s.schemeLeft}>
                     <div>
-                        <p><b>1.</b> Ящик управления</p>
+                        <p>1. Ящик управления</p>
                         <ul>
                             <li data-emoji="•">Бесступенчатая регулировка скорости от Siemens</li>
                             <li data-emoji="•">Русифицированная панель управления</li>
@@ -21,7 +21,7 @@ export const Scheme = () => {
                         </ul>
                     </div>
                     <div>
-                        <p><b>2.</b> Подогревающая плита</p>
+                        <p>2. Подогревающая плита</p>
                         <ul>
                             <li data-emoji="•">Температура нагрева 120°C</li>
                             <li data-emoji="•">Производительность 300 м2/ч</li>
@@ -34,7 +34,7 @@ export const Scheme = () => {
 
                 <div className={s.schemeRight}>
                     <div>
-                        <p><b>3.</b> Водяной бак</p>
+                        <p>3. Водяной бак</p>
                         <ul>
                             <li data-emoji="•">Низкое потребление</li>
                             <li data-emoji="•">Защищенная конструкция</li>
@@ -42,7 +42,7 @@ export const Scheme = () => {
                         </ul>
                     </div>
                     <div>
-                        <p><b>4.</b> Вибратор</p>
+                        <p>4. Вибратор</p>
                         <ul>
                             <li data-emoji="•">Автоматизированная регулировка вибрации</li>
                             <li data-emoji="•">Сбалансированная амплитуда уплотнение крошки</li>

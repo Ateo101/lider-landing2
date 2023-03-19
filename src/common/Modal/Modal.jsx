@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-// import data from "../data/images.json";
 
 export default function ModalFunc({images, isGrid}) {
   const [clickedImg, setClickedImg] = useState(null);
@@ -88,7 +87,7 @@ const Modal = ({clickedImg,setClickedImg,handelRotationRight,handelRotationLeft}
   return (
     <>
       <div className={'overlay dismiss'} onClick={handleClick}>
-        <img src={clickedImg} alt="bigger pic" className={isImgLandscape ? 'landscape' : undefined} />
+        <img src={clickedImg} alt={'equipment'} className={isImgLandscape ? 'landscape' : undefined} />
         <span className="dismiss" onClick={handleClick}>
           x
         </span>

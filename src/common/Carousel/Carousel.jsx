@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import s from './Carousel.module.css'
-// import data from "../data/images.json";
 
 export default function Carousel({images}) {
     const [clickedImg, setClickedImg] = useState(images[0].link);
@@ -86,7 +85,7 @@ const Modal = ({clickedImg, setClickedImg, handelRotationRight, handelRotationLe
                             />
                         </svg>
                 </div>
-                <img src={clickedImg} alt="bigger pic" className={isImgLandscape ? s.landscape : undefined}/>
+                <img src={clickedImg} alt="equipment" className={isImgLandscape ? s.landscape : undefined}/>
                 <div onClick={handelRotationRight} className={s.arrowsRight}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
