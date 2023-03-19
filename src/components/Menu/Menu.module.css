@@ -89,6 +89,8 @@
     flex-direction: row;
     justify-content: center;
     max-width: 90%;
+
+    margin: 0 auto;
 }
 
 .menu li {

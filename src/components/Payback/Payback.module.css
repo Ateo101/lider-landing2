@@ -63,7 +63,8 @@
 
 @media (max-width: 600px) {
     .paybackContent {
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .paybackRight {

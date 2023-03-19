@@ -75,7 +75,7 @@ export const Form = () => {
             {sent && <p className={'sent'}>✅ Мы получили вашу заявку! Пожалуйста, ожидайте ответа.</p>}
 
             <div className={'agreement'}>
-                <div style={{display: "flex"} }>
+                <div style={{display: "flex", alignItems: 'center'} }>
                     <input type={'checkbox'} defaultChecked={true}/>
                     <p>Согласие на обработку персональных данных</p>
                 </div>
