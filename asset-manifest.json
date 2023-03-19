@@ -1,28 +1,37 @@
 {
   "files": {
-    "main.css": "/lider-landing2/static/css/main.51733e7c.css",
-    "main.js": "/lider-landing2/static/js/main.64236db7.js",
+    "main.css": "/lider-landing2/static/css/main.11ec97e0.css",
+    "main.js": "/lider-landing2/static/js/main.49eb92b5.js",
     "static/js/787.da0d76f7.chunk.js": "/lider-landing2/static/js/787.da0d76f7.chunk.js",
-    "static/media/price.jpg": "/lider-landing2/static/media/price.28834d81d57f721228c3.jpg",
-    "static/media/new2.png": "/lider-landing2/static/media/new2.50c0900c52ec8ccc48c5.png",
+    "static/media/paver-home.png": "/lider-landing2/static/media/paver-home.50c0900c52ec8ccc48c5.png",
     "static/media/home-background.jpg": "/lider-landing2/static/media/home-background.53d73dc60ee15f69d41a.jpg",
     "static/media/photo1.jpg": "/lider-landing2/static/media/photo1.ad1ce65397ed3bd4b7a3.jpg",
     "static/media/photo2.jpg": "/lider-landing2/static/media/photo2.7fe6281721647673ff64.jpg",
+    "static/media/sert4.jpg": "/lider-landing2/static/media/sert4.91f41e7b3e33d71e960f.jpg",
     "static/media/photo4.jpg": "/lider-landing2/static/media/photo4.fa2227396b743f10cfb3.jpg",
+    "static/media/paver-supplies2.jpg": "/lider-landing2/static/media/paver-supplies2.73f1eec01a2336e2ff25.jpg",
+    "static/media/4.jpg": "/lider-landing2/static/media/4.9749a9cdad376360b48a.jpg",
+    "static/media/2.jpg": "/lider-landing2/static/media/2.179bb085799ac4484483.jpg",
+    "static/media/sert1.jpg": "/lider-landing2/static/media/sert1.e0154c62668bb79be36c.jpg",
+    "static/media/1.jpg": "/lider-landing2/static/media/1.d85ca64cf523f75b990e.jpg",
     "static/media/photo3.jpg": "/lider-landing2/static/media/photo3.6ab28cdc45ecc8de8794.jpg",
-    "static/media/new3.jpg": "/lider-landing2/static/media/new3.6501f8e3971c76229d94.jpg",
+    "static/media/sert2.jpg": "/lider-landing2/static/media/sert2.7dcf9e96162876f06b4c.jpg",
+    "static/media/3.jpg": "/lider-landing2/static/media/3.f1e29efc172f87f5ee68.jpg",
+    "static/media/paver-scheme.jpg": "/lider-landing2/static/media/paver-scheme.6501f8e3971c76229d94.jpg",
     "static/media/photo5.jpg": "/lider-landing2/static/media/photo5.c90dbafaf6cc7211290a.jpg",
-    "static/media/SectionImage.jpg": "/lider-landing2/static/media/SectionImage.ae42b51f05fb69b1fd23.jpg",
+    "static/media/sert3.jpg": "/lider-landing2/static/media/sert3.f8a418b3a0c0e7238bd3.jpg",
+    "static/media/5.png": "/lider-landing2/static/media/5.78eb966fdfdd554b8832.png",
+    "static/media/feedback1.webp": "/lider-landing2/static/media/feedback1.5b33107f912f705319fb.webp",
     "static/media/header-logo.svg": "/lider-landing2/static/media/header-logo.b5ad64f8186dd87a9d3e8e316cd9e7fd.svg",
     "index.html": "/lider-landing2/index.html",
     "static/media/h2marker.svg": "/lider-landing2/static/media/h2marker.6a72d7968a43efb86aab.svg",
     "static/media/header-garanty.svg": "/lider-landing2/static/media/header-garanty.523088f4e5da4908a4b02031666ee072.svg",
-    "main.51733e7c.css.map": "/lider-landing2/static/css/main.51733e7c.css.map",
-    "main.64236db7.js.map": "/lider-landing2/static/js/main.64236db7.js.map",
+    "main.11ec97e0.css.map": "/lider-landing2/static/css/main.11ec97e0.css.map",
+    "main.49eb92b5.js.map": "/lider-landing2/static/js/main.49eb92b5.js.map",
     "787.da0d76f7.chunk.js.map": "/lider-landing2/static/js/787.da0d76f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51733e7c.css",
-    "static/js/main.64236db7.js"
+    "static/css/main.11ec97e0.css",
+    "static/js/main.49eb92b5.js"
   ]
 }
