@@ -86,7 +86,7 @@ const Modal = ({clickedImg, setClickedImg, handelRotationRight, handelRotationLe
                             />
                         </svg>
                 </div>
-                <img src={clickedImg} alt="bigger pic" className={isImgLandscape && s.landscape}/>
+                <img src={clickedImg} alt="bigger pic" className={isImgLandscape ? s.landscape : undefined}/>
                 <div onClick={handelRotationRight} className={s.arrowsRight}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

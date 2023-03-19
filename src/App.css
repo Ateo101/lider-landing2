@@ -175,7 +175,7 @@ hr{
     max-height: 80%;
 }
 .overlay img.landscape {
-    height: fit-content;
+    height: auto;
     max-height: 100%;
     width: inherit;
     max-width: 100%;

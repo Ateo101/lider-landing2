@@ -88,7 +88,7 @@ const Modal = ({clickedImg,setClickedImg,handelRotationRight,handelRotationLeft}
   return (
     <>
       <div className={'overlay dismiss'} onClick={handleClick}>
-        <img src={clickedImg} alt="bigger pic" className={isImgLandscape && 'landscape'} />
+        <img src={clickedImg} alt="bigger pic" className={isImgLandscape ? 'landscape' : undefined} />
         <span className="dismiss" onClick={handleClick}>
           x
         </span>
