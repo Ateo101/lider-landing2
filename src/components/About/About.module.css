@@ -59,7 +59,7 @@
     text-shadow: -2px 2px 1px #0000009c;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .aboutContent {
         flex-wrap: wrap
     }

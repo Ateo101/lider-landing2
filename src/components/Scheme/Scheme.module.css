@@ -22,12 +22,6 @@
 .middle {
     height: 40vh;
     position: relative;
-}
-.middle::before {
-    content: ' ';
-    position: absolute;
-    inset: 0;
-    animation: levitation 2s infinite ease alternate;
     background: url('../../assets/commonAssets/paver-scheme.jpg') no-repeat 50%;
     background-size: contain;
 }
