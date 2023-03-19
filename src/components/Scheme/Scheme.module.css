@@ -71,10 +71,13 @@
 .schemeRight > * > p, .schemeLeft > * > p {
     margin-bottom: 0;
     border-bottom: 1px solid;
+    color: #4b6d1f;
+    font-weight: bold;
 }
 
 @media (max-width: 600px) {
     .schemeRight, .schemeLeft {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }

@@ -87,8 +87,9 @@ button:after {
     border-radius: 8px;
 }
 
-@media (max-width: 931px) {
+@media (max-width: 600px) {
     .formInput {
+        width: 100%;
     }
 }
 
@@ -122,7 +123,7 @@ hr{
 
 .wrapper img {
     width: 100%;
-    height: -webkit-fill-available;
+    height: auto;
 }
 
 .wrapper-images {
