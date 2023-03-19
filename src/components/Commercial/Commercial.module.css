@@ -67,6 +67,12 @@
     }
 
     .commercialLeft, .commercialRight {
-        width: 90%
+        width: 45%
+    }
+}
+
+@media (max-width: 800px) {
+    .commercialLeft, .commercialRight {
+        width: 100%
     }
 }

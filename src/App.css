@@ -106,9 +106,9 @@ hr{
 }
 
 @keyframes blinker {
-    40%,to{left:110%}
-    50%,to{left:110%}
-    60%,to{left:110%}
+    40%,to{left:120%}
+    50%,to{left:120%}
+    60%,to{left:120%}
 }
 
 
@@ -135,11 +135,9 @@ hr{
 .wrapper-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 160px;
+    grid-template-rows: repeat(2, 150px);
     grid-gap: 20px;
-    /*margin-bottom: 20px;*/
-
-    height: calc(50vh - 10px);
+    margin-bottom: -20px;
 }
 
 .wrapper-grid img {

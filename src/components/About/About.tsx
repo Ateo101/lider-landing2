@@ -5,7 +5,7 @@ import rightSert1 from '../../assets/about/right/sert1.jpg'
 import rightSert2 from '../../assets/about/right/sert2.jpg'
 import rightSert3 from '../../assets/about/right/sert3.jpg'
 import rightSert4 from '../../assets/about/right/sert4.jpg'
-import rightFeedback1 from '../../assets/about/right/feedback1.webp'
+import rightFeedback1 from '../../assets/about/right/feedback1.jpeg'
 import ModalFunc from "../../common/Modal/Modal";
 
 export const About = () => {
