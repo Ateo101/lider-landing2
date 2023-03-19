@@ -136,7 +136,7 @@ hr{
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 160px;
     grid-gap: 20px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 
     height: calc(50vh - 10px);
 }

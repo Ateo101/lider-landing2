@@ -1,5 +1,4 @@
 import s from "./Scheme.module.css"
-import payback from '../../assets/commonAssets/sample-image.jpg'
 
 export const Scheme = () => {
 
@@ -14,19 +13,19 @@ export const Scheme = () => {
 
                 <div className={s.schemeLeft}>
                     <div>
-                        <p><b>1.</b> Название детали оборудования</p>
+                        <p><b>1.</b> Ящик управления</p>
                         <ul>
-                            <li data-emoji="•">Планируемые данные по производству</li>
-                            <li data-emoji="•">Ежемесячные затраты</li>
-                            <li data-emoji="•">Материалы</li>
+                            <li data-emoji="•">Бесступенчатая регулировка скорости от Siemens</li>
+                            <li data-emoji="•">Русифицированная панель управления</li>
+                            <li data-emoji="•">Регулировка клиренса, угла, температуры и вибрации</li>
                         </ul>
                     </div>
                     <div>
-                        <p><b>2.</b> Название детали оборудования</p>
+                        <p><b>2.</b> Подогревающая плита</p>
                         <ul>
-                            <li data-emoji="•">Планируемые данные по производству</li>
-                            <li data-emoji="•">Ежемесячные затраты</li>
-                            <li data-emoji="•">Материалы</li>
+                            <li data-emoji="•">Температура нагрева 120°C</li>
+                            <li data-emoji="•">Производительность 300 м2/ч</li>
+                            <li data-emoji="•">КПД 99%</li>
                         </ul>
                     </div>
                 </div>
@@ -35,19 +34,19 @@ export const Scheme = () => {
 
                 <div className={s.schemeRight}>
                     <div>
-                        <p><b>3.</b> Название детали оборудования</p>
+                        <p><b>3.</b> Водяной бак</p>
                         <ul>
-                            <li data-emoji="•">Планируемые данные по производству</li>
-                            <li data-emoji="•">Ежемесячные затраты</li>
-                            <li data-emoji="•">Материалы</li>
+                            <li data-emoji="•">Низкое потребление</li>
+                            <li data-emoji="•">Защищенная конструкция</li>
+                            <li data-emoji="•">Легкое обслуживание</li>
                         </ul>
                     </div>
                     <div>
-                        <p><b>4.</b> Название детали оборудования</p>
+                        <p><b>4.</b> Вибратор</p>
                         <ul>
-                            <li data-emoji="•">Планируемые данные по производству</li>
-                            <li data-emoji="•">Ежемесячные затраты</li>
-                            <li data-emoji="•">Материалы</li>
+                            <li data-emoji="•">Автоматизированная регулировка вибрации</li>
+                            <li data-emoji="•">Сбалансированная амплитуда уплотнение крошки</li>
+                            <li data-emoji="•">Итальянская технология дебалансиров</li>
                         </ul>
                     </div>
                 </div>

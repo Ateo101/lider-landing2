@@ -59,6 +59,7 @@
 .schemeLeft > * > ul li, .schemeRight > * > ul li {
     padding-left: 5px;
     font-size: 16px;
+    font-weight: lighter;
 }
 
 .schemeLeft > * > ul li::marker, .schemeRight > * > ul li::marker {

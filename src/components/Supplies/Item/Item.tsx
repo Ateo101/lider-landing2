@@ -14,7 +14,7 @@ const Item = (props: ItemPropsType) => {
             <div className={s.imgContainer}>
                 <img src={props.img}/>
             </div>
-            <h3>Спецификация</h3>
+            <h3 style={{marginTop: '18px'}}>Спецификация</h3>
             <div className={s.description}>
                 <ul>
                     <span style={{textAlign: 'center'}}>{props.city}</span>

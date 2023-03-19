@@ -10,7 +10,7 @@ import rightPhoto3 from '../../assets/payback/photo3.jpg'
 import rightPhoto4 from '../../assets/payback/photo4.jpg'
 import rightPhoto5 from '../../assets/payback/photo5.jpg'
 import ModalFunc from "../../common/Modal/Modal";
-import ModalFunc2 from "../../common/Carousel/Carousel2";
+import Carousel from "../../common/Carousel/Carousel";
 
 export const Payback = () => {
 
@@ -78,18 +78,18 @@ export const Payback = () => {
                     <div className={s.container}>
                         <p>К вашему выбору несколько видов оборудования</p>
                         {/*<ModalFunc images={imagesLeft} isGrid={false}/>*/}
-                        <ModalFunc2 images={imagesLeft}/>
+                        <Carousel images={imagesLeft}/>
                         {/*<Carousel>
                             {[
                                 ...slides.map((img) => <img src={img}/>)
                             ]}
                         </Carousel>*/}
                         <ul>
-                            <li data-emoji="🔰">Укладчики резиновой крошки</li>
-                            <li data-emoji="🔰">Термовалики</li>
                             <li data-emoji="🔰">Распылители</li>
+                            <li data-emoji="🔰">Укладчики резиновой крошки</li>
                             <li data-emoji="🔰">Миксеры</li>
                             <li data-emoji="🔰">Машины для нанесения дорожной разметки</li>
+                            <li data-emoji="🔰">Термовалики</li>
                         </ul>
                     </div>
                 </div>

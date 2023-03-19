@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import s from './Carousel.module.css'
 // import data from "../data/images.json";
 
-export default function ModalFunc2({images}) {
+export default function Carousel({images}) {
     const [clickedImg, setClickedImg] = useState(images[0].link);
     const [currentIndex, setCurrentIndex] = useState(null);
 
