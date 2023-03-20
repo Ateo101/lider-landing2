@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.89da3c80.css",
-    "main.js": "/static/js/main.889a4f88.js",
+    "main.js": "/static/js/main.6049eb6d.js",
     "static/js/787.10d27bbf.chunk.js": "/static/js/787.10d27bbf.chunk.js",
     "static/media/paver-home.png": "/static/media/paver-home.50c0900c52ec8ccc48c5.png",
     "static/media/home-background.jpg": "/static/media/home-background.53d73dc60ee15f69d41a.jpg",
@@ -30,11 +30,11 @@
     "static/media/h2marker.svg": "/static/media/h2marker.6a72d7968a43efb86aab.svg",
     "static/media/header-garanty.svg": "/static/media/header-garanty.523088f4e5da4908a4b02031666ee072.svg",
     "main.89da3c80.css.map": "/static/css/main.89da3c80.css.map",
-    "main.889a4f88.js.map": "/static/js/main.889a4f88.js.map",
+    "main.6049eb6d.js.map": "/static/js/main.6049eb6d.js.map",
     "787.10d27bbf.chunk.js.map": "/static/js/787.10d27bbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89da3c80.css",
-    "static/js/main.889a4f88.js"
+    "static/js/main.6049eb6d.js"
   ]
 }
