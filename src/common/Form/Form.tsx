@@ -6,6 +6,11 @@ import {PatternFormat} from "react-number-format";
 export const Form = () => {
     const phoneRegExp = /^[0-9]{1}\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}-[0-9]{2}$/
     const [sent, setSent] = useState(false)
+    const sendMetrika = () => {
+        // @ts-ignore
+        ym(92884303,'reachGoal','MAIN_FORM');
+        return true;
+    }
 
     const formik = useFormik({
         initialValues: {
@@ -14,7 +19,7 @@ export const Form = () => {
             useremail: '',
         },
         validationSchema: Yup.object().shape({
-            username: Yup.string().trim().required('Пожалуйста, укажите имя').min(3, 'Слишком мало символов').max(40, 'Слишком много символов'),
+            username: Yup.string().trim().required('Пожалуйста, укажите имя').min(3, 'Слишком мало символов').max(35, 'Слишком много символов'),
             phone: Yup.string().trim().required('Укажите номер').matches(phoneRegExp, 'Введите полный номер'),
             useremail: Yup.string().trim().required('Укажите почту').email('Почта не существует'),
         }),
@@ -27,18 +32,19 @@ export const Form = () => {
                     Password: "EDB5A24ED6F812D1FB9B8FAF76E68BA37B14",
                     To: 'sales@lider-stk.com',
                     From: "sales@lider-stk.com",
-                    Subject: "Новая заявка | Оборудование для резиновой крошки",
+                    Subject: "✅ Новая заявка | Оборудование для резиновой крошки",
                     Body: `Имя: ${username}<br/>Телефон: ${phone}<br/>Почта: ${useremail}`
                 });
             resetForm({values: {username: '', phone: '', useremail: ''}})
             setSent(true)
+            sendMetrika()
         },
     })
 
 
 
     return (
-        <form className='form' onSubmit={formik.handleSubmit}>
+        <form className='form' method="get" onSubmit={formik.handleSubmit}>
 
             <input className='formInput callbackwidget-name' placeholder={'Введите имя'}
                    type="text"
