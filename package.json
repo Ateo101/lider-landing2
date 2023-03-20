@@ -1,7 +1,7 @@
 {
-  "name": "yo-landing",
-  "homepage": "https://Ateo101.github.io/lider-landing2/",
-  "version": "0.1.0",
+  "name": "yo-landing-1",
+  "homepage": "https://rez-stk.ru/",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.56.28",
